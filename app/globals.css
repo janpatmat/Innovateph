@@ -1,26 +1,129 @@
 @import "tailwindcss";
 
+/* ------------------------------------------------------------------ */
+/* Design tokens — exact company palette + type system                 */
+/* Colors generate utilities automatically (bg-navy, text-ink, ...).   */
+/* ------------------------------------------------------------------ */
+@theme {
+  --color-navy: #0b2d4d; /* deep navy  — headers, strong backgrounds   */
+  --color-royal: #075985; /* corporate blue — primary brand elements   */
+  --color-blue: #0ea5d9; /* bright blue — primary interactive/accent    */
+  --color-cyan: #22c7e8; /* cyan — sparing highlights                   */
+  --color-teal: #0f766e; /* teal — environmental/water secondary        */
+  --color-green: #3a8f5b; /* environmental green — secondary            */
+
+  --color-offwhite: #f7fafc;
+  --color-mist: #e8eef3; /* light gray — structure/borders              */
+  --color-slate: #64748b; /* medium gray — secondary text              */
+  --color-ink: #172033; /* dark text                                    */
+
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, -apple-system,
+    "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-mono: var(--font-plex-mono), ui-monospace, SFMono-Regular, Menlo,
+    "Liberation Mono", monospace;
+
+  --shadow-card: 0 1px 2px rgba(11, 45, 77, 0.04),
+    0 8px 24px -12px rgba(11, 45, 77, 0.12);
+  --shadow-lift: 0 2px 4px rgba(11, 45, 77, 0.06),
+    0 18px 40px -18px rgba(11, 45, 77, 0.22);
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  color-scheme: light;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
   }
 }
 
+/* keep anchored sections clear of the sticky header */
+:target,
+[id] {
+  scroll-margin-top: 6rem;
+}
+
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: #ffffff;
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: var(--color-cyan);
+  color: var(--color-navy);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-blue);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* ------------------------------------------------------------------ */
+/* Signature motifs                                                    */
+/* ------------------------------------------------------------------ */
+
+/* faint blueprint grid for dark navy sections */
+.blueprint {
+  background-image: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.045) 1px,
+      transparent 1px
+    ),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.045) 1px, transparent 1px);
+  background-size: 46px 46px;
+}
+
+/* engineering registration ticks used on image frames */
+.tick-frame::before,
+.tick-frame::after {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  border-color: currentColor;
+  opacity: 0.5;
+}
+.tick-frame::before {
+  top: 10px;
+  left: 10px;
+  border-top: 1.5px solid;
+  border-left: 1.5px solid;
+}
+.tick-frame::after {
+  bottom: 10px;
+  right: 10px;
+  border-bottom: 1.5px solid;
+  border-right: 1.5px solid;
+}
+
+/* thin uppercase technical label */
+.eyebrow {
+  font-family: var(--font-mono);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+/* ------------------------------------------------------------------ */
+/* Reveal-on-scroll — subtle, and only when motion is welcome + JS on. */
+/* `scripting: enabled` detects JS in pure CSS (no DOM mutation), so    */
+/* content stays visible without JS or when reduced motion is set.      */
+/* ------------------------------------------------------------------ */
+@media (prefers-reduced-motion: no-preference) and (scripting: enabled) {
+  .reveal {
+    opacity: 0;
+    transform: translateY(18px);
+    transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1),
+      transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+    will-change: opacity, transform;
+  }
+  .reveal.is-visible {
+    opacity: 1;
+    transform: none;
+  }
 }
