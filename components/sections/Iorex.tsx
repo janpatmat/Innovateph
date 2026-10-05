@@ -2,6 +2,7 @@ import Container from "@/components/Container";
 import { Eyebrow } from "@/components/SectionHeading";
 import Reveal from "@/components/Reveal";
 import ImagePlaceholder from "@/components/ImagePlaceholder";
+import BlueprintShapes from "@/components/BlueprintShapes";
 import { Icon } from "@/components/Icons";
 import { iorexBenefits } from "@/lib/content";
 
@@ -13,6 +14,7 @@ export default function Iorex() {
       className="relative overflow-hidden bg-navy py-20 text-white sm:py-28"
     >
       <div className="blueprint absolute inset-0 opacity-50" aria-hidden="true" />
+      <BlueprintShapes tone="dark" variant={3} />
       <div
         aria-hidden="true"
         className="pointer-events-none absolute -left-40 top-0 h-[34rem] w-[34rem] rounded-full bg-teal/20 blur-[130px]"

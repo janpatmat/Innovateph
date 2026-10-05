@@ -1,6 +1,7 @@
 import Container from "@/components/Container";
 import Button from "@/components/Button";
 import Reveal from "@/components/Reveal";
+import BlueprintShapes from "@/components/BlueprintShapes";
 import { Eyebrow } from "@/components/SectionHeading";
 import { company } from "@/lib/content";
 
@@ -20,6 +21,7 @@ export default function Hero() {
     >
       {/* signature: blueprint grid + one restrained cyan glow */}
       <div className="blueprint absolute inset-0 opacity-70" aria-hidden="true" />
+      <BlueprintShapes tone="dark" variant={0} />
       <div
         aria-hidden="true"
         className="pointer-events-none absolute -right-40 -top-52 h-[40rem] w-[40rem] rounded-full bg-blue/15 blur-[130px]"

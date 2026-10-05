@@ -1,6 +1,7 @@
 import Container from "@/components/Container";
 import Reveal from "@/components/Reveal";
 import Button from "@/components/Button";
+import BlueprintShapes from "@/components/BlueprintShapes";
 import { Eyebrow } from "@/components/SectionHeading";
 
 /** Reusable closing call-to-action band. */
@@ -25,6 +26,7 @@ export default function CtaBand({
             className="blueprint absolute inset-0 opacity-50"
             aria-hidden="true"
           />
+          <BlueprintShapes tone="dark" variant={2} />
           <div
             aria-hidden="true"
             className="pointer-events-none absolute left-1/2 top-0 h-72 w-[36rem] -translate-x-1/2 rounded-full bg-royal/30 blur-[120px]"

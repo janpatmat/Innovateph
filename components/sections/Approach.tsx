@@ -1,6 +1,7 @@
 import Container from "@/components/Container";
 import SectionHeading from "@/components/SectionHeading";
 import Reveal from "@/components/Reveal";
+import BlueprintShapes from "@/components/BlueprintShapes";
 import { approach } from "@/lib/content";
 
 export default function Approach() {
@@ -8,9 +9,10 @@ export default function Approach() {
     <section
       id="approach"
       aria-labelledby="approach-title"
-      className="bg-white py-20 sm:py-28"
+      className="relative overflow-hidden bg-white py-20 sm:py-28"
     >
-      <Container>
+      <BlueprintShapes tone="light" variant={1} />
+      <Container className="relative">
         <Reveal>
           <SectionHeading
             titleId="approach-title"

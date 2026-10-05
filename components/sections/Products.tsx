@@ -3,6 +3,7 @@ import SectionHeading from "@/components/SectionHeading";
 import Reveal from "@/components/Reveal";
 import Button from "@/components/Button";
 import ProductCard from "@/components/ProductCard";
+import BlueprintShapes from "@/components/BlueprintShapes";
 import { products } from "@/lib/content";
 
 export default function Products({
@@ -18,9 +19,10 @@ export default function Products({
     <section
       id="products"
       aria-labelledby={hideHeading ? undefined : "products-title"}
-      className="border-b border-mist bg-offwhite py-20 sm:py-28"
+      className="relative overflow-hidden border-b border-mist bg-offwhite py-20 sm:py-28"
     >
-      <Container>
+      <BlueprintShapes tone="light" variant={0} />
+      <Container className="relative">
         {hideHeading ? null : (
           <Reveal>
             <SectionHeading

@@ -1,6 +1,7 @@
 import Container from "@/components/Container";
 import Reveal from "@/components/Reveal";
 import ContactForm from "@/components/ContactForm";
+import BlueprintShapes from "@/components/BlueprintShapes";
 import { Eyebrow } from "@/components/SectionHeading";
 import { Icon } from "@/components/Icons";
 import { offices, contactPlaceholders } from "@/lib/content";
@@ -10,9 +11,10 @@ export default function Contact() {
     <section
       id="contact"
       aria-labelledby="contact-title"
-      className="bg-offwhite py-20 sm:py-28"
+      className="relative overflow-hidden bg-offwhite py-20 sm:py-28"
     >
-      <Container>
+      <BlueprintShapes tone="light" variant={3} />
+      <Container className="relative">
         <div className="grid gap-14 lg:grid-cols-2 lg:gap-16">
           <div className="flex flex-col gap-8">
             <Reveal className="flex flex-col gap-3">

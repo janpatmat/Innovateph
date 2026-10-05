@@ -20,6 +20,7 @@ export const navLinks = [
   { label: "Solutions", href: "/solutions" },
   { label: "Products", href: "/products" },
   { label: "IOREX", href: "/iorex" },
+  { label: "Roze AI", href: "/rozeai" },
   { label: "Partners", href: "/partners" },
   { label: "Contact", href: "/contact" },
 ] as const;
@@ -163,10 +164,10 @@ export const products: {
   {
     name: "ROZEAI",
     index: "P-02",
-    body: "A featured product from the company portfolio. Full details and specifications to be added.",
+    body: "AI-powered fire safety from Korea — the FIRE4CAST™ platform for fire assessment, wireless detection, and early warning. Innovate International is its Philippine partner.",
     imagePath: "/products/Roze-AI.png",
-    placeholder: true,
     imageReady: true,
+    href: "/rozeai",
   },
   {
     name: "IOREX",
@@ -187,6 +188,36 @@ export const iorexBenefits: { label: string; icon: IconName }[] = [
   { label: "Reduced maintenance", icon: "wrench" },
   { label: "Reduced replacement costs", icon: "coins" },
   { label: "Improved equipment efficiency", icon: "gauge" },
+];
+
+/**
+ * IOREX in the Philippines — Innovate presenting the system to the local water
+ * sector. Figure numbers continue the page's plate index (FIG. 01–02 are the
+ * Korea photos in IorexSource, FIG. 03 the certificate).
+ */
+export const iorexFieldPhotos = [
+  {
+    src: "/iorex/iorex_pawd_entrance.jpeg",
+    alt: "Innovate International representatives at the entrance to the PAWD Convergence 2026 in Cebu City",
+    figure: "FIG. 04",
+    caption: "PAWD Convergence 2026, Cebu",
+    // matches the height of the two 3:4 portraits beside it on desktop
+    ratio: "14 / 9",
+  },
+  {
+    src: "/iorex/iorex_presentation.jpeg",
+    alt: "An Innovate International representative presenting IOREX on stage to a ballroom of delegates",
+    figure: "FIG. 05",
+    caption: "Presenting to delegates",
+    ratio: "3 / 4",
+  },
+  {
+    src: "/iorex/iorex_booth_demo.jpeg",
+    alt: "An Innovate International representative walking visitors through IOREX at the company booth",
+    figure: "FIG. 06",
+    caption: "Booth walkthroughs",
+    ratio: "3 / 4",
+  },
 ];
 
 /**
@@ -253,6 +284,34 @@ export const values = [
   "Long-Term Partnerships",
 ];
 
+/**
+ * "Our People" section content — shared between the landing spotlight and the
+ * About-page cut so both stay in sync. Captions describe what each photograph
+ * literally shows; no claims beyond the company material.
+ */
+export const people = {
+  eyebrow: "Our People",
+  title: "The people behind our work",
+  intro:
+    "From the office to the stage — the team sourcing quality products and building practical solutions for businesses, government institutions, and industries across the Philippines.",
+  photos: [
+    {
+      src: "/company/innovate_employees.jpeg",
+      alt: "The Innovate International team with attendees at a meeting",
+      figure: "FIG. 01",
+      caption: "During a meeting",
+      ratio: "4 / 3",
+    },
+    {
+      src: "/company/innovate_publicspeak.jpeg",
+      alt: "An Innovate International representative presenting on stage beside the Philippine flag",
+      figure: "FIG. 02",
+      caption: "Presenting our work",
+      ratio: "3 / 4",
+    },
+  ],
+} as const;
+
 /** Contact — offices are from the material; email/phone await real data */
 export const offices = [
   {
@@ -281,7 +340,87 @@ export const partners: {
   href?: string;
 }[] = [
   { name: "IOREX", logo: "/partners/iorex_logo.png", href: "/iorex" },
-  { name: "ROZEAI", logo: "/partners/Roze-AI.png" },
+  { name: "ROZEAI", logo: "/partners/Roze-AI.png", href: "/rozeai" },
   { name: "JAS & JR", logo: "/partners/jasnjr.png" },
   { name: "JROG", logo: "/partners/jrog.jpeg" },
 ];
+
+/**
+ * Roze AI — technology partner. Every fact below is drawn from the MOU-signing
+ * and training material (banners, certificates); captions describe what each
+ * photograph shows. No claims beyond that material.
+ */
+export const rozeai = {
+  eyebrow: "Technology Partner",
+  name: "Roze AI",
+  origin: "Republic of Korea",
+  tagline: "Creating a new value through innovation",
+  intro:
+    "Roze AI is a Korean technology company focused on AI-driven fire safety. Its FIRE4CAST™ platform applies artificial intelligence to fire assessment and early warning, paired with wireless fire detection and digital-twin risk modeling. Innovate International Philippines is its Philippine partner.",
+  capabilities: [
+    {
+      name: "FIRE4CAST™",
+      body: "An AI system for fire assessment and early warning — the platform at the center of the Roze AI lineup.",
+      icon: "chip",
+    },
+    {
+      name: "Wireless Fire Alarm",
+      body: "Wireless fire detection and monitoring over an RF 400–900MHz network.",
+      icon: "gauge",
+    },
+    {
+      name: "Digital Twin & Fire Risk",
+      body: "Digital-twin modeling with fire-risk assessment, built into the FIRE4CAST platform.",
+      icon: "layers",
+    },
+    {
+      name: "So.S Home",
+      body: "Roze AI's home safety offering, presented alongside the FIRE4CAST system.",
+      icon: "shield",
+    },
+  ] as { name: string; body: string; icon: IconName }[],
+  milestones: [
+    {
+      date: "April 14, 2026",
+      place: "Diamond Hotel Manila",
+      title: "MOU signing ceremony",
+      body: "Roze AI and Innovate International signed a memorandum of understanding, alongside a Roze AI technology seminar for distinguished guests from the Philippines.",
+    },
+    {
+      date: "June 11–12, 2026",
+      place: "Roze AI, Korea",
+      title: "FIRE4CAST™ training completed",
+      body: "Innovate International's team completed Roze AI's technical training on FIRE4CAST and the wireless fire-alarm monitoring system.",
+    },
+  ],
+  photos: [
+    {
+      src: "/rozeai/rozeai_signing.jpeg",
+      alt: "Representatives of Roze AI and Innovate International signing the memorandum of understanding",
+      figure: "FIG. 01",
+      caption: "Signing the MOU",
+      ratio: "3 / 4",
+    },
+    {
+      src: "/rozeai/rozeai_signed.jpeg",
+      alt: "Roze AI and Innovate International representatives presenting the signed memorandum of understanding",
+      figure: "FIG. 02",
+      caption: "The signed agreement",
+      ratio: "3 / 2",
+    },
+    {
+      src: "/rozeai/rozeai_allpartners.jpeg",
+      alt: "Roze AI and Innovate International delegates at the signing ceremony in Manila",
+      figure: "FIG. 03",
+      caption: "The delegations in Manila",
+      ratio: "4 / 3",
+    },
+    {
+      src: "/rozeai/rozeai_certificate.jpeg",
+      alt: "Innovate International team with FIRE4CAST training completion certificates at Roze AI in Korea",
+      figure: "FIG. 04",
+      caption: "FIRE4CAST training, Korea",
+      ratio: "3 / 4",
+    },
+  ],
+};

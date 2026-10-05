@@ -1,6 +1,7 @@
 import Container from "@/components/Container";
 import SectionHeading from "@/components/SectionHeading";
 import Reveal from "@/components/Reveal";
+import BlueprintShapes from "@/components/BlueprintShapes";
 import { Icon } from "@/components/Icons";
 import { advantages } from "@/lib/content";
 
@@ -12,6 +13,7 @@ export default function WhyChoose() {
       className="relative overflow-hidden bg-navy py-20 text-white sm:py-28"
     >
       <div className="blueprint absolute inset-0 opacity-50" aria-hidden="true" />
+      <BlueprintShapes tone="dark" variant={1} />
       <div
         aria-hidden="true"
         className="pointer-events-none absolute right-0 top-1/2 h-[28rem] w-[28rem] -translate-y-1/2 rounded-full bg-royal/25 blur-[130px]"

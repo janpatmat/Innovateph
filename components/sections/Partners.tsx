@@ -3,6 +3,7 @@ import Link from "next/link";
 import Container from "@/components/Container";
 import SectionHeading from "@/components/SectionHeading";
 import Reveal from "@/components/Reveal";
+import BlueprintShapes from "@/components/BlueprintShapes";
 import { partners } from "@/lib/content";
 
 export default function Partners({
@@ -14,9 +15,10 @@ export default function Partners({
     <section
       id="partners"
       aria-labelledby={hideHeading ? undefined : "partners-title"}
-      className="bg-offwhite py-20 sm:py-28"
+      className="relative overflow-hidden bg-offwhite py-20 sm:py-28"
     >
-      <Container>
+      <BlueprintShapes tone="light" variant={0} />
+      <Container className="relative">
         {hideHeading ? null : (
           <Reveal>
             <SectionHeading

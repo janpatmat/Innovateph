@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import PageHeader from "@/components/PageHeader";
 import Iorex from "@/components/sections/Iorex";
+import IorexSource from "@/components/sections/IorexSource";
+import IorexCertificate from "@/components/sections/IorexCertificate";
+import IorexField from "@/components/sections/IorexField";
 import International from "@/components/sections/International";
 import CtaBand from "@/components/sections/CtaBand";
 
@@ -19,6 +22,9 @@ export default function IorexPage() {
         intro="A next-generation smart pipe management system designed for water-pipe treatment and management — improving water quality while reducing maintenance and replacement costs."
       />
       <Iorex />
+      <IorexSource />
+      <IorexCertificate />
+      <IorexField />
       <International />
       <CtaBand
         title="Interested in IOREX?"

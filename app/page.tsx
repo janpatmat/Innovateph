@@ -1,5 +1,6 @@
 import Hero from "@/components/sections/Hero";
 import WhoWeAre from "@/components/sections/WhoWeAre";
+import Company from "@/components/sections/Company";
 import WhatWeDo from "@/components/sections/WhatWeDo";
 import Products from "@/components/sections/Products";
 import IorexTeaser from "@/components/sections/IorexTeaser";
@@ -10,6 +11,7 @@ export default function Home() {
     <>
       <Hero />
       <WhoWeAre ctaHref="/about" ctaLabel="More About Us" />
+      <Company />
       <WhatWeDo ctaHref="/solutions" ctaLabel="View All Solutions" />
       <Products ctaHref="/products" ctaLabel="View Product Portfolio" />
       <IorexTeaser />

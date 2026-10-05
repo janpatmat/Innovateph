@@ -1,6 +1,7 @@
 import Container from "@/components/Container";
 import SectionHeading from "@/components/SectionHeading";
 import Reveal from "@/components/Reveal";
+import BlueprintShapes from "@/components/BlueprintShapes";
 import { Icon } from "@/components/Icons";
 import { internationalProjects } from "@/lib/content";
 
@@ -45,9 +46,10 @@ export default function International() {
     <section
       id="international"
       aria-labelledby="international-title"
-      className="border-y border-mist bg-offwhite py-20 sm:py-28"
+      className="relative overflow-hidden border-y border-mist bg-offwhite py-20 sm:py-28"
     >
-      <Container>
+      <BlueprintShapes tone="light" variant={2} />
+      <Container className="relative">
         <Reveal>
           <SectionHeading
             titleId="international-title"

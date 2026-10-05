@@ -3,6 +3,7 @@ import { Eyebrow } from "@/components/SectionHeading";
 import Reveal from "@/components/Reveal";
 import Button from "@/components/Button";
 import ImagePlaceholder from "@/components/ImagePlaceholder";
+import BlueprintShapes from "@/components/BlueprintShapes";
 import { Icon } from "@/components/Icons";
 import { iorexBenefits } from "@/lib/content";
 
@@ -13,6 +14,7 @@ export default function IorexTeaser() {
   return (
     <section className="relative overflow-hidden bg-navy py-20 text-white sm:py-24">
       <div className="blueprint absolute inset-0 opacity-50" aria-hidden="true" />
+      <BlueprintShapes tone="dark" variant={1} />
       <div
         aria-hidden="true"
         className="pointer-events-none absolute -left-32 top-0 h-[30rem] w-[30rem] rounded-full bg-teal/20 blur-[130px]"

@@ -79,6 +79,15 @@ body {
   background-size: 46px 46px;
 }
 
+/* faint survey dot-grid — the light-ground companion to .blueprint */
+.dotgrid {
+  background-image: radial-gradient(
+    rgba(11, 45, 77, 0.07) 1.5px,
+    transparent 1.5px
+  );
+  background-size: 22px 22px;
+}
+
 /* engineering registration ticks used on image frames */
 .tick-frame::before,
 .tick-frame::after {

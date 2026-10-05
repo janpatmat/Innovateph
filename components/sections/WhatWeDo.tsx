@@ -2,6 +2,7 @@ import Container from "@/components/Container";
 import SectionHeading from "@/components/SectionHeading";
 import Reveal from "@/components/Reveal";
 import Button from "@/components/Button";
+import BlueprintShapes from "@/components/BlueprintShapes";
 import { Icon } from "@/components/Icons";
 import { solutions } from "@/lib/content";
 
@@ -18,9 +19,10 @@ export default function WhatWeDo({
     <section
       id="solutions"
       aria-labelledby={hideHeading ? undefined : "solutions-title"}
-      className="border-y border-mist bg-offwhite py-20 sm:py-28"
+      className="relative overflow-hidden border-y border-mist bg-offwhite py-20 sm:py-28"
     >
-      <Container>
+      <BlueprintShapes tone="light" variant={3} />
+      <Container className="relative">
         {hideHeading ? null : (
           <Reveal>
             <SectionHeading

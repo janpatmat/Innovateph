@@ -1,6 +1,7 @@
 import type { ReactNode } from "react";
 import Container from "@/components/Container";
 import Reveal from "@/components/Reveal";
+import BlueprintShapes from "@/components/BlueprintShapes";
 import { Eyebrow } from "@/components/SectionHeading";
 
 /**
@@ -19,6 +20,7 @@ export default function PageHeader({
   return (
     <section className="relative overflow-hidden bg-navy text-white">
       <div className="blueprint absolute inset-0 opacity-60" aria-hidden="true" />
+      <BlueprintShapes tone="dark" variant={2} />
       <div
         aria-hidden="true"
         className="pointer-events-none absolute -right-40 -top-40 h-[32rem] w-[32rem] rounded-full bg-blue/20 blur-[120px]"

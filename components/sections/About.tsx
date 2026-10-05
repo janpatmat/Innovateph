@@ -2,6 +2,7 @@ import Image from "next/image";
 import Container from "@/components/Container";
 import SectionHeading from "@/components/SectionHeading";
 import Reveal from "@/components/Reveal";
+import BlueprintShapes from "@/components/BlueprintShapes";
 import { company } from "@/lib/content";
 
 const snapshot = [
@@ -19,9 +20,10 @@ export default function About({
     <section
       id="about"
       aria-labelledby={hideHeading ? undefined : "about-title"}
-      className="bg-white py-20 sm:py-28"
+      className="relative overflow-hidden bg-white py-20 sm:py-28"
     >
-      <Container>
+      <BlueprintShapes tone="light" variant={3} />
+      <Container className="relative">
         <div className="grid gap-14 lg:grid-cols-2 lg:gap-16">
           <div className="flex flex-col gap-6">
             {hideHeading ? null : (

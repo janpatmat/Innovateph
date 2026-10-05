@@ -2,6 +2,7 @@ import Container from "@/components/Container";
 import SectionHeading from "@/components/SectionHeading";
 import Reveal from "@/components/Reveal";
 import Button from "@/components/Button";
+import BlueprintShapes from "@/components/BlueprintShapes";
 import { Icon } from "@/components/Icons";
 import { pillars } from "@/lib/content";
 
@@ -16,9 +17,16 @@ export default function WhoWeAre({
     <section
       id="who-we-are"
       aria-labelledby="who-we-are-title"
-      className="bg-offwhite py-20 sm:py-24"
+      className="relative overflow-hidden bg-offwhite py-20 sm:py-24"
     >
-      <Container>
+      {/* subtle survey dot-grid — light-ground echo of the navy blueprint */}
+      <div
+        aria-hidden="true"
+        className="dotgrid pointer-events-none absolute inset-0 [mask-image:radial-gradient(120%_80%_at_100%_0%,black,transparent_62%)]"
+      />
+      <BlueprintShapes tone="light" variant={1} />
+
+      <Container className="relative">
         <Reveal>
           <SectionHeading
             titleId="who-we-are-title"

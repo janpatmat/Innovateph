@@ -1,6 +1,7 @@
 import Container from "@/components/Container";
 import { Eyebrow } from "@/components/SectionHeading";
 import Reveal from "@/components/Reveal";
+import BlueprintShapes from "@/components/BlueprintShapes";
 import { Icon } from "@/components/Icons";
 import { vision, mission, values } from "@/lib/content";
 
@@ -12,6 +13,7 @@ export default function VisionMission() {
       className="relative overflow-hidden bg-navy py-20 text-white sm:py-28"
     >
       <div className="blueprint absolute inset-0 opacity-50" aria-hidden="true" />
+      <BlueprintShapes tone="dark" variant={0} />
       <div
         aria-hidden="true"
         className="pointer-events-none absolute left-1/2 top-0 h-[26rem] w-[42rem] -translate-x-1/2 rounded-full bg-royal/25 blur-[140px]"
