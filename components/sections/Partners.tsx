@@ -24,7 +24,7 @@ export default function Partners({
             <SectionHeading
               titleId="partners-title"
               eyebrow="Our Partners"
-              title="Working with trusted manufacturers and partners"
+              title="Working With Trusted Manufacturers and Partners"
               intro="We collaborate with established local and international manufacturers to bring quality products and technologies to our clients."
             />
           </Reveal>

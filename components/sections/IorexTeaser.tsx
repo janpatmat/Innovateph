@@ -67,7 +67,7 @@ export default function IorexTeaser() {
           <Reveal delay={140}>
             <ImagePlaceholder
               label="IOREX Product Image"
-              caption="Smart pipe management system"
+              caption="Smart Pipe Management System"
               src="/iorex/iorex_product.jpg"
               alt="IOREX smart pipe management system"
               tone="brand"

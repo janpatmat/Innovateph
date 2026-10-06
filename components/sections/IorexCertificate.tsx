@@ -7,8 +7,8 @@ import BlueprintShapes from "@/components/BlueprintShapes";
 /** Kept deliberately general — the certificate image carries the specifics. */
 const details = [
   { term: "Holder", value: "IOREX Co., Ltd." },
-  { term: "Issued by", value: "An independent certification body" },
-  { term: "Scope", value: "Applicable water-system standards" },
+  { term: "Issued By", value: "An Independent Certification Body" },
+  { term: "Scope", value: "Applicable Water-System Standards" },
 ];
 
 /** Register marks set just outside the certificate sheet's corners. */
@@ -45,7 +45,7 @@ export default function IorexCertificate() {
                 tone="dark"
                 titleId="iorex-certificate-title"
                 eyebrow="Certification"
-                title="Independently certified"
+                title="Independently Certified"
                 intro="IOREX holds certification from an internationally recognized, independent standards organization — third-party recognition that the system meets applicable requirements for water systems."
               />
             </Reveal>

@@ -28,7 +28,7 @@ export default function WhatWeDo({
             <SectionHeading
               titleId="solutions-title"
               eyebrow="What We Do"
-              title="Solutions across the sectors that keep the country moving"
+              title="Solutions Across the Sectors That Keep the Country Moving"
               intro="From industrial supply to environmental technology, we cover a broad range of areas — bringing the right product or system to each requirement."
             />
           </Reveal>

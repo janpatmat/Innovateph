@@ -31,7 +31,7 @@ export default function About({
                 <SectionHeading
                   titleId="about-title"
                   eyebrow="About the Company"
-                  title="A diversified business built to grow with its clients"
+                  title="A Diversified Business Built to Grow With Its Clients"
                   as="h2"
                 />
               </Reveal>

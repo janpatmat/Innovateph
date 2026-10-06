@@ -57,7 +57,7 @@ export const solutions: { title: string; body: string; icon: IconName }[] = [
     icon: "industrial",
   },
   {
-    title: "Water Piping treatment",
+    title: "Water Piping Treatment",
     body: "Water management, plumbing, and related technologies.",
     icon: "water",
   },
@@ -181,13 +181,13 @@ export const products: {
 
 /** IOREX — benefits presented in the company material */
 export const iorexBenefits: { label: string; icon: IconName }[] = [
-  { label: "Pipe treatment", icon: "pipe" },
-  { label: "Water quality", icon: "droplet" },
-  { label: "De-scaling", icon: "layers" },
-  { label: "Extended pipeline life", icon: "clock" },
-  { label: "Reduced maintenance", icon: "wrench" },
-  { label: "Reduced replacement costs", icon: "coins" },
-  { label: "Improved equipment efficiency", icon: "gauge" },
+  { label: "Pipe Treatment", icon: "pipe" },
+  { label: "Water Quality", icon: "droplet" },
+  { label: "De-Scaling", icon: "layers" },
+  { label: "Extended Pipeline Life", icon: "clock" },
+  { label: "Reduced Maintenance", icon: "wrench" },
+  { label: "Reduced Replacement Costs", icon: "coins" },
+  { label: "Improved Equipment Efficiency", icon: "gauge" },
 ];
 
 /**
@@ -208,14 +208,14 @@ export const iorexFieldPhotos = [
     src: "/iorex/iorex_presentation.jpeg",
     alt: "An Innovate International representative presenting IOREX on stage to a ballroom of delegates",
     figure: "FIG. 05",
-    caption: "Presenting to delegates",
+    caption: "Presenting to Delegates",
     ratio: "3 / 4",
   },
   {
     src: "/iorex/iorex_booth_demo.jpeg",
     alt: "An Innovate International representative walking visitors through IOREX at the company booth",
     figure: "FIG. 06",
-    caption: "Booth walkthroughs",
+    caption: "Booth Walkthroughs",
     ratio: "3 / 4",
   },
 ];
@@ -291,7 +291,7 @@ export const values = [
  */
 export const people = {
   eyebrow: "Our People",
-  title: "The people behind our work",
+  title: "The People Behind Our Work",
   intro:
     "From the office to the stage — the team sourcing quality products and building practical solutions for businesses, government institutions, and industries across the Philippines.",
   photos: [
@@ -299,14 +299,14 @@ export const people = {
       src: "/company/innovate_employees.jpeg",
       alt: "The Innovate International team with attendees at a meeting",
       figure: "FIG. 01",
-      caption: "During a meeting",
+      caption: "During a Meeting",
       ratio: "4 / 3",
     },
     {
       src: "/company/innovate_publicspeak.jpeg",
       alt: "An Innovate International representative presenting on stage beside the Philippine flag",
       figure: "FIG. 02",
-      caption: "Presenting our work",
+      caption: "Presenting Our Work",
       ratio: "3 / 4",
     },
   ],
@@ -383,13 +383,13 @@ export const rozeai = {
     {
       date: "April 14, 2026",
       place: "Diamond Hotel Manila",
-      title: "MOU signing ceremony",
+      title: "MOU Signing Ceremony",
       body: "Roze AI and Innovate International signed a memorandum of understanding, alongside a Roze AI technology seminar for distinguished guests from the Philippines.",
     },
     {
       date: "June 11–12, 2026",
       place: "Roze AI, Korea",
-      title: "FIRE4CAST™ training completed",
+      title: "FIRE4CAST™ Training Completed",
       body: "Innovate International's team completed Roze AI's technical training on FIRE4CAST and the wireless fire-alarm monitoring system.",
     },
   ],
@@ -405,21 +405,21 @@ export const rozeai = {
       src: "/rozeai/rozeai_signed.jpeg",
       alt: "Roze AI and Innovate International representatives presenting the signed memorandum of understanding",
       figure: "FIG. 02",
-      caption: "The signed agreement",
+      caption: "The Signed Agreement",
       ratio: "3 / 2",
     },
     {
       src: "/rozeai/rozeai_allpartners.jpeg",
       alt: "Roze AI and Innovate International delegates at the signing ceremony in Manila",
       figure: "FIG. 03",
-      caption: "The delegations in Manila",
+      caption: "The Delegations in Manila",
       ratio: "4 / 3",
     },
     {
       src: "/rozeai/rozeai_certificate.jpeg",
       alt: "Innovate International team with FIRE4CAST training completion certificates at Roze AI in Korea",
       figure: "FIG. 04",
-      caption: "FIRE4CAST training, Korea",
+      caption: "FIRE4CAST Training, Korea",
       ratio: "3 / 4",
     },
   ],

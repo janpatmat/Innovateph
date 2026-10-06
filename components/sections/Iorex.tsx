@@ -36,7 +36,7 @@ export default function Iorex() {
                 id="iorex-title"
                 className="text-balance text-3xl font-bold leading-[1.1] tracking-tight sm:text-4xl"
               >
-                Protecting the pipeline, improving the water
+                Protecting the Pipeline, Improving the Water
               </h2>
             </Reveal>
             <Reveal delay={160}>
@@ -58,7 +58,7 @@ export default function Iorex() {
           <Reveal delay={140} className="relative">
             <ImagePlaceholder
               label="IOREX Product Image"
-              caption="Smart pipe management system"
+              caption="Smart Pipe Management System"
               src="/iorex/iorex_product.jpg"
               alt="IOREX smart pipe management system"
               tone="brand"
@@ -68,7 +68,7 @@ export default function Iorex() {
             <div className="absolute -bottom-4 -right-4 hidden rounded-lg border border-white/10 bg-navy/90 px-4 py-3 shadow-lift backdrop-blur sm:block">
               <p className="eyebrow text-[0.6rem] text-cyan">Water Technology</p>
               <p className="mt-1 text-sm font-semibold text-white">
-                Treatment &amp; management
+                Treatment &amp; Management
               </p>
             </div>
           </Reveal>
@@ -127,7 +127,7 @@ export default function Iorex() {
           <Reveal>
             <ImagePlaceholder
               label="IOREX Installation / Project Photo"
-              caption="On-site installation imagery"
+              caption="On-Site Installation Imagery"
               src="/iorex/iorex_application.jpg"
               alt="IOREX on-site installation"
               tone="dark"
@@ -136,7 +136,7 @@ export default function Iorex() {
           </Reveal>
           <Reveal delay={100} className="flex flex-col gap-3">
             <h3 className="text-xl font-semibold text-white">
-              Built for real water systems
+              Built for Real Water Systems
             </h3>
             <p className="text-sm leading-6 text-mist/75">
               On-site installation and project imagery from real deployments,

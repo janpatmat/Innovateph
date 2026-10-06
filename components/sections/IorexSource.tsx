@@ -32,7 +32,7 @@ export default function IorexSource() {
           <SectionHeading
             titleId="iorex-source-title"
             eyebrow="At the Source"
-            title="Working directly with the makers of IOREX"
+            title="Working Directly With the Makers of IOREX"
             intro="Innovate International works with IOREX at the source — meeting the manufacturer in Korea and seeing the system exhibited and internationally certified, the water-pipe technology it brings to businesses and institutions across the Philippines."
           />
         </Reveal>
@@ -43,7 +43,7 @@ export default function IorexSource() {
               src="/iorex/iorex_warehouse.jpeg"
               alt="Innovate International representatives visiting the IOREX Co., Ltd. facility in Korea"
               figure="FIG. 01"
-              caption="At the IOREX facility"
+              caption="At the IOREX Facility"
               ratio="4 / 3"
               sizes="(max-width: 1024px) 100vw, 58vw"
             />

@@ -32,7 +32,7 @@ export default function IorexField() {
           <SectionHeading
             titleId="iorex-philippines-title"
             eyebrow="In the Philippines"
-            title="Bringing IOREX to Philippine water districts"
+            title="Bringing IOREX to Philippine Water Districts"
             intro="Innovate International introduces IOREX to the people who run local water systems — on conference stages, at exhibitions, and in one-on-one walkthroughs."
           />
         </Reveal>

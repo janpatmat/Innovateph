@@ -7,7 +7,7 @@ import { company } from "@/lib/content";
 
 const facts = [
   { k: "Established", v: company.established },
-  { k: "Reach", v: "Multi-sector" },
+  { k: "Reach", v: "Multi-Sector" },
   { k: "Offices", v: "Davao · Manila" },
 ];
 

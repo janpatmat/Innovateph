@@ -28,7 +28,7 @@ export default function Products({
             <SectionHeading
               titleId="products-title"
               eyebrow="Our Product Portfolio"
-              title="Featured products and technologies"
+              title="Featured Products and Technologies"
               intro="A selection of the products and technologies we bring to Philippine businesses, institutions, and industries."
             />
           </Reveal>

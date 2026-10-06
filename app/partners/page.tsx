@@ -14,13 +14,13 @@ export default function PartnersPage() {
     <>
       <PageHeader
         eyebrow="Our Partners"
-        title="Working with trusted manufacturers and partners"
+        title="Working With Trusted Manufacturers and Partners"
         intro="We collaborate with established local and international manufacturers to bring quality products and technologies to our clients."
       />
       <Partners hideHeading />
       <CtaBand
         eyebrow="Partnerships"
-        title="Interested in partnering with us?"
+        title="Interested in Partnering With Us?"
         body="We're always open to new manufacturer and distribution partnerships. Let's start a conversation."
       />
     </>

@@ -31,7 +31,7 @@ export default function WhoWeAre({
           <SectionHeading
             titleId="who-we-are-title"
             eyebrow="Who We Are"
-            title="A Philippine-based provider working across many sectors"
+            title="A Philippine-Based Provider Working Across Many Sectors"
             intro="Established in 2021, Innovate International Philippines is a trading, distribution, and solutions provider. Rather than focusing on a single industry, we work across multiple sectors — sourcing quality products and practical technologies for the clients who need them."
           />
         </Reveal>

@@ -24,7 +24,7 @@ export default function RozeAi() {
           <SectionHeading
             titleId="about-rozeai-title"
             eyebrow="About Roze AI"
-            title="AI applied to fire safety"
+            title="AI Applied to Fire Safety"
             intro={rozeai.intro}
           />
         </Reveal>

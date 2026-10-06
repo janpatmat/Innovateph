@@ -35,7 +35,7 @@ export default function RozePartnership() {
             tone="dark"
             titleId="rozeai-partnership-title"
             eyebrow="The Partnership"
-            title="A partnership signed on innovation"
+            title="A Partnership Signed on Innovation"
             intro="Innovate International Philippines is Roze AI's Philippine partner — from the memorandum of understanding in Manila to hands-on FIRE4CAST training in Korea."
           />
         </Reveal>

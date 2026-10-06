@@ -17,7 +17,7 @@ export default function AboutPage() {
     <>
       <PageHeader
         eyebrow="About the Company"
-        title="A diversified business built to grow with its clients"
+        title="A Diversified Business Built to Grow With Its Clients"
         intro="Established in 2021, Innovate International Philippines works across many sectors — sourcing quality products and practical technologies for businesses, government, and industry."
       />
       <About hideHeading />

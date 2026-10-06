@@ -23,7 +23,7 @@ export default function WhyChoose() {
           <SectionHeading
             titleId="why-choose-title"
             eyebrow="Why Work With Us"
-            title="A partner our clients can rely on"
+            title="A Partner Our Clients Can Rely On"
             intro="We build long-term relationships on structured processes, clear communication, and solutions that fit real business needs."
             tone="dark"
           />

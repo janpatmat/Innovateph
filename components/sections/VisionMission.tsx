@@ -25,7 +25,7 @@ export default function VisionMission() {
             id="vision-title"
             className="max-w-2xl text-balance text-3xl font-bold tracking-tight sm:text-4xl"
           >
-            Guided by a clear purpose
+            Guided by a Clear Purpose
           </h2>
         </Reveal>
 

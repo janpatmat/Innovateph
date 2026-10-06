@@ -54,7 +54,7 @@ export default function International() {
           <SectionHeading
             titleId="international-title"
             eyebrow="International Collaboration"
-            title="A technology with an international footprint"
+            title="A Technology With an International Footprint"
             intro="The IOREX material references installations at civic, medical, and academic institutions across Korea and the United States."
           />
         </Reveal>

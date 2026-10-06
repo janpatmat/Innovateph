@@ -15,7 +15,7 @@ export default function RozeAiPage() {
     <>
       <PageHeader
         eyebrow="Technology Partner"
-        title="Roze AI — AI-powered fire safety"
+        title="Roze AI — AI-Powered Fire Safety"
         intro="A Korean technology company applying AI to fire assessment and early warning. Innovate International Philippines is its Philippine partner, bringing the FIRE4CAST platform to homes, buildings, and institutions."
       />
       <RozeAi />

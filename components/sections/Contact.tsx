@@ -23,7 +23,7 @@ export default function Contact() {
                 id="contact-title"
                 className="text-2xl font-semibold tracking-tight text-navy sm:text-3xl"
               >
-                Offices &amp; contact details
+                Offices &amp; Contact Details
               </h2>
             </Reveal>
 
